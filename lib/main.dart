@@ -2,6 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_gojin_rpl3/container_widget/latihan_container.dart';
+import 'package:flutter_gojin_rpl3/row_column.dart/column_widget.dart';
+import 'package:flutter_gojin_rpl3/row_column.dart/layout_widget.dart';
+import 'package:flutter_gojin_rpl3/row_column.dart/newproject.dart';
+import 'package:flutter_gojin_rpl3/row_column.dart/row_column.dart';
+import 'package:flutter_gojin_rpl3/row_column.dart/row_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,7 +33,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255, 3, 2, 2),
 
         ),
-        body: LatihanContainer(),
+        body: Kartu(),
       ),
     );
   }
