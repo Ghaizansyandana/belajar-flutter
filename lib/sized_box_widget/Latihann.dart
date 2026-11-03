@@ -180,19 +180,16 @@ class LatihanWidget extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 20),
-      
-        Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: const Text(
-        'Skil Keahlian',
-         style: TextStyle(
-         fontSize: 16,
-        fontWeight: FontWeight.bold,
-        ),
-      ),
-    ),
 
-       Padding(
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: const Text(
+            'Skil Keahlian',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+        ),
+
+        Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -204,10 +201,7 @@ class LatihanWidget extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(11),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 1,
-                  ),
+                  border: Border.all(color: Colors.black, width: 1),
                   image: const DecorationImage(
                     image: NetworkImage(
                       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI54guGV79U7DS3XQFO5GigZdsEV2xHwrllj9QBN53mA&s=10',
@@ -249,10 +243,7 @@ class LatihanWidget extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(11),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 1,
-                  ),
+                  border: Border.all(color: Colors.black, width: 1),
                   image: const DecorationImage(
                     image: NetworkImage(
                       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3KRF2KUVqHuSh4jJccD2jSJ7hAgRDt0AN9_kAQeDzZA&s=10',
@@ -294,10 +285,7 @@ class LatihanWidget extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 0, 0, 0),
                   borderRadius: BorderRadius.circular(11),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 1,
-                  ),
+                  border: Border.all(color: Colors.black, width: 1),
                   image: const DecorationImage(
                     image: NetworkImage(
                       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe3Xu2W8rm_46Ni8I4vS8-m25tyxTBrkgtZa-ZSLiqKw&s=10',
@@ -335,6 +323,6 @@ class LatihanWidget extends StatelessWidget {
           ),
         ),
       ],
-    ); 
+    );
   }
 }

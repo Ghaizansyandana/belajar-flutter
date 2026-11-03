@@ -1,7 +1,12 @@
 // main.dart
 
 import 'package:flutter/material.dart';
-import 'package:flutter_gojin_rpl3/sized_box_widget/Latihan.dart';
+import 'package:flutter_gojin_rpl3/list_view/latihan.dart';
+import 'package:flutter_gojin_rpl3/list_view/list_basic.dart';
+import 'package:flutter_gojin_rpl3/list_view/list_builder.dart';
+import 'package:flutter_gojin_rpl3/list_view/list_builder2.dart';
+import 'package:flutter_gojin_rpl3/list_view/list_separated.dart';
+import 'package:flutter_gojin_rpl3/sized_box_widget/Latihann.dart';
 import 'package:flutter_gojin_rpl3/sized_box_widget/LayoutDua.dart';
 import 'package:flutter_gojin_rpl3/sized_box_widget/LayoutEmpat.dart';
 import 'package:flutter_gojin_rpl3/sized_box_widget/LayoutSatu.dart';
@@ -22,7 +27,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            "Brewek Kartu Pokemon",
+            "Metal Gear Catalog",
             style: TextStyle(
               color: const Color.fromARGB(255, 255, 255, 255),
               fontSize: 24,
@@ -33,11 +38,11 @@ class MyApp extends StatelessWidget {
           ),
           backgroundColor: const Color.fromARGB(255, 3, 2, 2),
         ),
-        body: LatihanWidget(),
+        body: MyWidgetGw(),
       ),
     );
   }
-}
+} 
 
 class HelloWidget extends StatelessWidget {
   const new({super.key});
