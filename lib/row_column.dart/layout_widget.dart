@@ -5,29 +5,36 @@ class LayoutRowColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Container(
-      width: double.infinity,
-      height: 100,
-      color: Colors.grey,
-      child:  Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [Icon(Icons.call, size: 48,), Text("Call")],
-          ), 
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [Icon(Icons.share, size: 48,), Text("Share")],
-          ), 
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [Icon(Icons.navigation, size: 48,), Text("Navigate")],
-          ), 
-        ],
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Layout Widget"),
       ),
-    )
-      
+      body: Center(
+        child: Container(
+          width: double.infinity,
+          height: 100,
+          color: Colors.grey,
+          child: const Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [Icon(Icons.call, size: 48), Text("Call")],
+              ),
+              SizedBox(width: 24),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [Icon(Icons.near_me, size: 48), Text("Route")],
+              ),
+              SizedBox(width: 24),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [Icon(Icons.share, size: 48), Text("Share")],
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

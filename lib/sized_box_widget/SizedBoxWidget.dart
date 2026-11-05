@@ -5,20 +5,28 @@ class Sizedboxwidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          Text("Baris 1"),
-          SizedBox(height: 20,),
-          Text("Baris 2"),
-          SizedBox(
-            width: 250,
-            height: 25,
-            child: ElevatedButton(
-              onPressed: () {}, 
-              child: Text("Tombol")),
-          )
-        ],
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("SizedBox Widget"),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text("Baris 1"),
+            const SizedBox(height: 20),
+            const Text("Baris 2"),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: 250,
+              height: 40,
+              child: ElevatedButton(
+                onPressed: () {},
+                child: const Text("Tombol"),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

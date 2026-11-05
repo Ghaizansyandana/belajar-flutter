@@ -5,19 +5,29 @@ class ColumnWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        FlutterLogo(
-          size: 50, style: FlutterLogoStyle.horizontal,
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Column Widget"),
+      ),
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            FlutterLogo(
+              size: 50,
+              style: FlutterLogoStyle.horizontal,
+            ),
+            FlutterLogo(
+              size: 50,
+              style: FlutterLogoStyle.stacked,
+            ),
+            FlutterLogo(
+              size: 50,
+              textColor: Color.fromARGB(255, 0, 234, 255),
+            ),
+          ],
         ),
-        FlutterLogo(
-          size: 50, style: FlutterLogoStyle.stacked,
-        ),
-        FlutterLogo(
-          size: 50, textColor: const Color.fromARGB(255, 0, 234, 255),
-        )
-      ],
+      ),
     );
   }
 }

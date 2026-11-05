@@ -5,29 +5,34 @@ class ListBasic extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        Container(
-          width: 100,
-          color: Colors.amber,
-          child: Center(child: Text("Golongan Orang Kaya")),
-        ),
-        Container(
-          width: 100,
-          color: Colors.green,
-          child: Center(child: Text("Golongan Rakyat Miskin")),
-        ),
-        Container(
-          width: 100,
-          color: Colors.blue,
-          child: Center(child: Text("Golongan Susah")),
-        ),
-        Container(
-          width: 100,
-          color: Colors.pink,
-          child: Center(child: Text("Golongan Orang Ripuh Busung Lapar")),
-        ),
-      ],
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("List Basic"),
+      ),
+      body: ListView(
+        children: [
+          Container(
+            height: 80,
+            color: Colors.amber,
+            child: const Center(child: Text("Golongan Orang Kaya")),
+          ),
+          Container(
+            height: 80,
+            color: Colors.green,
+            child: const Center(child: Text("Golongan Rakyat Miskin")),
+          ),
+          Container(
+            height: 80,
+            color: Colors.blue,
+            child: const Center(child: Text("Golongan Susah")),
+          ),
+          Container(
+            height: 80,
+            color: Colors.pink,
+            child: const Center(child: Text("Golongan Orang Ripuh Busung Lapar")),
+          ),
+        ],
+      ),
     );
   }
 }

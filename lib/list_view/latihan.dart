@@ -29,6 +29,9 @@ class MyWidgetGw extends StatelessWidget {
     ];
 
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Latihan List View"),
+      ),
       body: ListView(
         padding: const EdgeInsets.only(top: 10),
         children: [
@@ -50,7 +53,7 @@ class MyWidgetGw extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.2),
+                        color: Colors.black.withValues(alpha: 0.2),
                         blurRadius: 5,
                         offset: const Offset(0, 3),
                       ),
@@ -79,7 +82,7 @@ class MyWidgetGw extends StatelessWidget {
                               gradient: LinearGradient(
                                 colors: [
                                   Colors.transparent,
-                                  Colors.black.withOpacity(0.7),
+                                  Colors.black.withValues(alpha: 0.7),
                                 ],
                                 begin: Alignment.topCenter,
                                 end: Alignment.bottomCenter,
@@ -140,7 +143,7 @@ class MyWidgetGw extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.2),
+                        color: Colors.black.withValues(alpha: 0.2),
                         blurRadius: 5,
                         offset: const Offset(0, 3),
                       ),

@@ -5,28 +5,36 @@ class RowColumnWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        FlutterLogo(
-          size: 50, style: FlutterLogoStyle.horizontal,
-        ),
-        FlutterLogo(
-          size: 50, style: FlutterLogoStyle.stacked,
-        ),
-        FlutterLogo(
-          size: 50, textColor: const Color.fromARGB(255, 0, 234, 255),
-        ),
-        Column(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Row & Column Widget"),
+      ),
+      body: Center(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("ini teks column 1"),
-            Text("ini teks column 2"),
-            Text("ini teks column 3"),
+            const FlutterLogo(
+              size: 50,
+              style: FlutterLogoStyle.horizontal,
+            ),
+            const FlutterLogo(
+              size: 50,
+              style: FlutterLogoStyle.stacked,
+            ),
+            const FlutterLogo(
+              size: 50,
+              textColor: Color.fromARGB(255, 0, 234, 255),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                FlutterLogo(size: 50),
+                FlutterLogo(size: 50),
+              ],
+            ),
           ],
         ),
-        
-      ],
+      ),
     );
   }
 }

@@ -5,37 +5,43 @@ class Layouttiga extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Row(
-        children: [
-          Expanded(
-            child: Container(
-              height: 80,
-              color: Colors.blue[100],
-              alignment: Alignment.center,
-              child: Text("Pemasukan"),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Layout Tiga"),
+      ),
+      body: Center(
+        child: Row(
+          children: [
+            const SizedBox(width: 10),
+            Expanded(
+              child: Container(
+                height: 80,
+                color: Colors.blue[100],
+                alignment: Alignment.center,
+                child: const Text("Pemasukan"),
+              ),
             ),
-          ),
-          SizedBox(width: 10,),
-          Expanded(
-            child: Container(
-              height: 80,
-              color: Colors.green[100],
-              alignment: Alignment.center,
-              child: Text("Pengeluaran"),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Container(
+                height: 80,
+                color: Colors.green[100],
+                alignment: Alignment.center,
+                child: const Text("Pengeluaran"),
+              ),
             ),
-          ),
-          SizedBox(width: 10,),
-          Expanded(
-            child: Container(
-              height: 80,
-              color: Colors.orange[100],
-              alignment: Alignment.center,
-              child: Text("Saldo"),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Container(
+                height: 80,
+                color: Colors.orange[100],
+                alignment: Alignment.center,
+                child: const Text("Saldo"),
+              ),
             ),
-          ),
-          SizedBox(width: 10,),
-        ],
+            const SizedBox(width: 10),
+          ],
+        ),
       ),
     );
   }
